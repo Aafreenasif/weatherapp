@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#bg-img {
+    background-image: url(./img/pexels-pixabay-206359.jpg);
+    position: relative;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    position: absolute;
+    border: 1px solid whitesmoke;
+    border-radius: 0.3rem;
+    padding: 14vh 20vh;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(230, 230, 235, 0.8);
+    transition: background-color 300ms;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+#weather-form {
+    width: 160%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input {
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input::placeholder {
+    color: #B0B0B0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#button {
+    margin-top: 20px;
+    padding: 8px 20px;
+    outline: none;
+    border: 1px solid #8DB6CD;
+    border-radius: 0.2rem;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #F2F2F2;
+    background: #8DB6CD;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover {
+    background-color: #6C93B4;
+    color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    font-weight: 800;
+    font-size: 28px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+#temperature {
+    padding-top: 20px;
+    font-size: 3rem;
+    color: #333333;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#CityName {
+    padding-top: 0px;
+    font-size: 1.6rem;
+    color: #333333;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#weather-info {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#weathercondition {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333333;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    article {
+        padding: 10vh 10vh;
+    }
+
+    #input {
+        width: 100%;
+    }
+
+    input {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 6px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
